@@ -1,0 +1,44 @@
+<%- include('../includes/head.ejs') %>
+  <%- include('../includes/header.ejs') %>
+
+  <title>Administrador</title>
+
+  <p class="centrado">
+    <img src="/resources/Logo_Clownvados.ico" height="150px" width="150px">
+  </p>
+
+        <div class="container-2">
+            <div class="row">
+                <div style="text-align: center;">
+                    <table class="table table-striped table-bordered table-hover">
+                        <tr>
+                            <th style="color: white;">Id</th>
+                            <th style="color: white;">Nombre</th>
+                            <th style="color: white;">Correo</th>
+                            <th style="color: white;">Celular</th>
+                            <th style="color: white;">Rol</th>
+                            <th style="color: white;">Tema</th>
+                            <th style="color: white;">Mensaje</th>
+                        </tr>
+                        <% for (let i = 0; i < datos.length; i++) { %>
+                        <tr>
+                            <td style="color: white;"> <%= datos[i].idContacto %> </td>
+                            <td style="color: white;"> <%= datos[i].nombre %> </td>
+                            <td style="color: white;"> <%= datos[i].correo %> </td>
+                            <td style="color: white;"> <%= datos[i].celular %> </td>
+                            <td style="color: white;"> <%= datos[i].rol %> </td>
+                            <td style="color: white;"> <%= datos[i].tema %> </td>
+                            <td style="color: white;"> <%= datos[i].mensaje %> </td>
+                            <td>
+                                <div>
+                                    <a class="mr-1 btn btn-danger" href="/deleteAdministardor/<%= datos[i].idContacto  %>"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <% } %>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <%- include('../includes/footer.ejs') %>

@@ -1,0 +1,66 @@
+<%- include('../includes/head.ejs') %>
+  <%- include('../includes/header.ejs') %>
+  
+  <title>Registro</title>
+
+  <body class="bg-dark">
+    <section>
+      <div class="row g-0"> 
+        <div class="col-lg-7 d-none d-lg-block">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/resources/Carrusel_Registro_1.jpg" width="850px" height="1000px">
+              </div>
+              <div class="carousel-item">
+                <img src="/resources/Carrusel_Registro_2.jpg" width="850px" height="1000px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex flex-column align-items-end min-vh-100 text-center">
+          <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100  mb-3">
+            <img src="/resources/Logo_Clownvados.ico" class="img-fluid" width="200px" height="200px">
+          </div>
+          <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
+            <h1 class="font-weight-bold mb-4">¡Crea tu cuenta!</h1>
+            <h5 class="font-weight-bold mb-4">Ingresa la siguiente informacion.</h5>
+            <form action="Registro" method="POST">
+              <div class="form-row mb-1 register-form">
+                  <div class="form-group col-md-15">
+                      <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Tu nombre" name="nombre">
+                  </div><br>
+                  <div class="form-group col-md-15">
+                      <label class="font-weight-bold">Apellidos <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Tus apellidos" name="apellidos">
+                  </div><br>
+              </div>
+              <div class="form-group mb-3">
+                  <label class="font-weight-bold">Usuario<span class="text-danger">*</span></label>
+                  <input type="user" class="form-control" placeholder="Ingresa tu usuario" name="usuario">
+              </div>
+              <div class="form-group mb-3">
+                  <label class="font-weight-bold">Contraseña <span class="text-danger">*</span></label>
+                  <input type="password" class="form-control" placeholder="Ingresa una contraseña" name="contrasena">
+              </div><br>
+              <button class="btn btn-dark width-100" type="submit" value="registro">Regristrate</button>
+          </form><br>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('../includes/footer.ejs') %>

@@ -1,0 +1,48 @@
+<%- include('../includes/head.ejs') %>
+  <%- include('../includes/header.ejs') %>
+
+  <title>Contacto</title>
+
+      <div class="contact-wrap">
+        <div class="contact-in">
+          <h1 class="display-4 fw-bold">Informacion de contacto</h1>
+          <h2 class="display-4 fw-bold"><i class="fa fa-phone" aria-hidden="true"></i> Celular:</h2>
+          <p>311-308-2718</p>
+          <h2 class="display-4 fw-bold"><i class="fa fa-envelope" aria-hidden="true"></i> Correo:</h2>
+          <p>Clownvados@gmail.com</p>
+          <h2 class="display-4 fw-bold"><i class="fa fa-map-marker" aria-hidden="true"></i> Direccion:</h2>
+          <p>Cra. 62 #2 A 138, San Antonio de Prado, Medellín, Antioquia</p>
+          <ul>
+            <li><a href="https://www.facebook.com/Grupo-artistico-clownvados-104338874888130" target="_blanck"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://instagram.com/clownvados?igshid=cqdunkjxyeev" target="_blanck"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul> <br>
+          <h2 class="display-4 fw-bold">PARA RECORDAR</h2>
+          <p class="display-4">La aplicación "Caja de sorpresas" hace parte de un ejercicio académico en el programa Técnico en Programación de Software, en convenio Institución Universitaria Salazar y Herrera - SENA, 2021.
+            Los autores: Vanessa Garcia Arboleda, Steven Restrepo Torres pueden agregar imágenes y/o avatares.
+            Los derechos de uso y ejecución están sujetos a Licencia Creative Commons, o derechos reservados de autor según sea el caso (consulte co.creativecommons.org)</p>
+        </div>
+        <div class="contact-in">
+          <h1 class="display-4 fw-bold">Enviar un mensaje</h1>
+          <form action="Contacto" method="POST">
+            <input type="text" placeholder="Nombre completo" class="contact-in-input" name="nombre">
+            <input type="text" placeholder="Correo" class="contact-in-input" name="correo">
+            <input type="text" placeholder="Numero de celular" class="contact-in-input" name="celular">
+            <select class="contact-in-input" aria-label="Por favor seleccione su rol" name="rol">
+              <option selected>Por favor seleccione su rol</option>
+              <option value="Usuario">Usuario</option>
+              <option value="Cliente">Cliente</option>
+              <option value="Integrante del grupo">Integrante del grupo</option>
+            </select>
+            <input type="text" placeholder="Tema" class="contact-in-input" name="tema">
+            <textarea placeholder="Mensaje" class="contact-in-textarea" name="mensaje"></textarea>
+            <input type="submit" value="ENVIAR" class="contact-in-btn display-4 fw-bold">
+          </form>
+        </div>
+        <div class="contact-in">
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1622001691179!6m8!1m7!1s-Lhk_-SUPepMd9K9oT7gog!2m2!1d6.175369494949907!2d-75.64316174534082!3f97.27332769890059!4f-19.138414078405503!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <br>
+          <p>En este mapa puedes ver donde normalmente el grupo artistico realiza los talleres de circo.</p>
+        </div>
+      </div>
+
+      
+      <%- include('../includes/footer.ejs') %>

@@ -1,0 +1,21 @@
+<body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class=" navg navbar-nav w-100 justify-content-center">
+            <a class="nav-item nav-link active" href="/">Inicio</a>
+            <a class="nav-item nav-link active" href="<%= login === true ? 'Servicios' : 'Servicios'  %>"><%= login === true ? 'Servicios' : 'Servicios'  %></a>
+            <a class="nav-item nav-link active" href="<%= login === true ? 'Contacto' : 'Contacto'  %>"><%= login === true ? 'Contacto' : 'Contacto'  %></a>
+            <a class="nav-item nav-link active" href="<%= login === true ? 'Administrador' : '/Inicio_sesion'  %>"><%= login === true ? 'Administrador' : 'Inicio Sesion'  %></a>
+            <a class="nav-item nav-link active" href="<%= login === true ? 'Registro' : ''  %>"><%= login === true ? 'Registro' : ''  %></a>
+            <a class="nav-item nav-link active" href="<%= login === true ? 'getLogout' : ''  %>"><%= login === true ? 'Cerrar Sesión' : ''  %></a>
+            <a class="nav-item nav-link" href="https://www.facebook.com/Grupo-artistico-clownvados-104338874888130" target="_blanck"><i class="fab fa-facebook-square"></i></a>
+            <a class="nav-item nav-link" href="https://www.instagram.com/clownvados/" target="_blanck"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
